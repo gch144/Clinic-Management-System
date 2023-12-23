@@ -1,0 +1,135 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = auth
+build_property.RootNamespace = auth
+build_property.ProjectDir = /home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Admin/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRGlzcGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Admin/DoctorSchedule/AllDoctorSchedules.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRG9jdG9yU2NoZWR1bGUvQWxsRG9jdG9yU2NoZWR1bGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Admin/DoctorSchedule/CreateDoctorSchedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRG9jdG9yU2NoZWR1bGUvQ3JlYXRlRG9jdG9yU2NoZWR1bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Admin/DoctorSchedule/DeleteDoctorSchedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRG9jdG9yU2NoZWR1bGUvRGVsZXRlRG9jdG9yU2NoZWR1bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Admin/DoctorSchedule/DisplayDoctorSchedules.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRG9jdG9yU2NoZWR1bGUvRGlzcGxheURvY3RvclNjaGVkdWxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Admin/DoctorSchedule/EditDoctorSchedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRG9jdG9yU2NoZWR1bGUvRWRpdERvY3RvclNjaGVkdWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Admin/DoctorSchedule/_ScheduleTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRG9jdG9yU2NoZWR1bGUvX1NjaGVkdWxlVGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Admin/RegistrationDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUmVnaXN0cmF0aW9uRG9jdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Appointment/DisplayAvailableTimeSlots.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnQvRGlzcGxheUF2YWlsYWJsZVRpbWVTbG90cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Appointment/DisplayDoctorAppointments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnQvRGlzcGxheURvY3RvckFwcG9pbnRtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Appointment/DisplayDoctorAvaibilty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnQvRGlzcGxheURvY3RvckF2YWliaWx0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Appointment/DisplayPatientAppointments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnQvRGlzcGxheVBhdGllbnRBcHBvaW50bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Appointment/Doctors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnQvRG9jdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Appointment/EditAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnQvRWRpdEFwcG9pbnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Appointment/SearchDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnQvU2VhcmNoRG9jdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Dashboard/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0Rpc3BsYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Shared/EditorTemplates/Date.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0VkaXRvclRlbXBsYXRlcy9EYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/UserAuthentication/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlckF1dGhlbnRpY2F0aW9uL0NoYW5nZVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/UserAuthentication/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlckF1dGhlbnRpY2F0aW9uL0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/UserAuthentication/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlckF1dGhlbnRpY2F0aW9uL1JlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gaurav/Documents/GUI/First/23Z-EGUI-Chauhan-Gaurav/MVC/auth/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nauow0o8i1

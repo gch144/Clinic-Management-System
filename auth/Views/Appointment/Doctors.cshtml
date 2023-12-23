@@ -1,0 +1,50 @@
+@model List<auth.Models.Domain.User>
+
+<h2>Doctors with Specialization: @ViewBag.Specialization</h2>
+<style>
+    .header-spacing {
+        padding-right: 10px;
+    }
+
+    .element-spacing {
+        margin-right: 10px;
+    }
+
+    .cell-spacing {
+        padding-right: 10px;
+    }
+</style>
+
+@if (Model.Any())
+{
+    <table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th class="header-spacing">Specialization</th>
+            <th>Action</th>
+            <!-- Add more columns as needed -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doctor in Model)
+            {
+                <tr>
+                    <td class="cell-spacing">@doctor.Name</td>
+                    <td>@doctor.Specialty_Doc</td>
+                    <td>
+                        <form asp-action="DisplayDoctorAvaibilty" method="get">
+                            <input type="hidden" name="doctorId" value="@doctor.Id" />
+                            <button type="submit" class="btn btn-success">Check Availability</button>
+                        </form>
+                    </td>
+                    <!-- Add more columns as needed -->
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No doctors found with the specified specialization.</p>
+}

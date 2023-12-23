@@ -1,0 +1,46 @@
+@model List<Appointment>
+
+<h1>Your Appointments</h1>
+
+@if (Model.Any())
+{
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Doctor</th>
+            <th>Specialty</th>
+            <th>Date</th>
+            <th>DayOfWeek</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model)
+            {
+                <tr>
+                    <td>@appointment.Doctor.Name</td>
+                    <td>@appointment.Doctor.Specialty_Doc</td>
+                    <td>@appointment.AppointmentDate</td>
+                    <td>@appointment.AppointmentDate.ToString("ddd")</td>
+                    <td>@appointment.StartTime</td>
+                    <td>@appointment.EndTime</td>
+                    <td>@appointment.Description</td>
+                    <td>
+                        <form asp-action="CancelAppointment" method="post">
+                            <input type="hidden" name="appointmentId" value="@appointment.Id" />
+                            <button type="submit" class="btn btn-danger">CancelAppointment</button>
+                        </form>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No appointments found.</p>
+}

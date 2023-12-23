@@ -1,0 +1,38 @@
+@model List<auth.Models.Domain.User>
+
+@{
+    ViewData["Title"] = "Admin Page";
+}
+
+<div>
+    <h1>User List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Is Verified</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserName</td>
+                    <td>@user.Email</td>
+                    <td>@(user.IsVerified ? "Yes" : "No")</td>
+                    <td>
+                        @if (!user.IsVerified)
+                        {
+                            <form asp-action="VerifyUser" asp-controller="Admin" method="post">
+                                <input type="hidden" name="userId" value="@user.Id" />
+                                <button type="submit">Verify</button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

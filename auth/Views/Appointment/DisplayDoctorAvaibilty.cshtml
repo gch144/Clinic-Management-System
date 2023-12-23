@@ -1,0 +1,50 @@
+@model List<DoctorSchedule>
+
+@{
+    var doctorDetails = ViewData["DoctorDetails"] as auth.Models.Domain.User;
+}
+
+<h2>Doctor Availability</h2>
+
+@if (Model.Any())
+{
+    <h3>@(doctorDetails?.Name), Specialization: @(doctorDetails?.Specialty_Doc)</h3>
+
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>DayOfWeek</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doctorSchedule in Model)
+            {
+                <tr>
+                    <td>@doctorSchedule.DoctorDate.ToShortDateString()</td>
+                    <td>@doctorSchedule.DoctorDate.ToString("ddd")</td>
+                    <td>@doctorSchedule.StartTime</td>
+                    <td>@doctorSchedule.EndTime</td>
+                    <td>
+                        <form asp-action="DisplayAvailableTimeSlots" method="post">
+                            <input type="hidden" name="doctorId" value="@doctorSchedule.DoctorId" />
+                            <input type="hidden" name="doctordate" value="@doctorSchedule.DoctorDate." />
+                            <input type="hidden" name="startTime" value="@doctorSchedule.StartTime" />
+                            <input type="hidden" name="endTime" value="@doctorSchedule.EndTime" />
+                            <button type="submit" class="btn btn-success">Check Time Slots</button>
+                        </form>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No availability information found for the selected doctor.</p>
+}

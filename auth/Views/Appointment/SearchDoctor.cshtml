@@ -1,0 +1,18 @@
+@model auth.Models.Domain.User
+@* @model Appointment *@
+<h2>Search Doctors</h2>
+
+<form asp-action="SearchDoctorsBySpecialization" method="get">
+    <!-- Other form fields -->
+
+    <div class="form-group">
+        <label asp-for="Specialty_Doc" class="control-label"></label>
+        <select asp-for="Specialty_Doc" class="form-control"
+                asp-items="@Html.GetEnumSelectList(typeof(auth.Models.Domain.DoctorSpecialty))"></select>
+        <span asp-validation-for="Specialty_Doc" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Search Doctors</button>
+</form>
+
+<!-- Your other HTML content -->

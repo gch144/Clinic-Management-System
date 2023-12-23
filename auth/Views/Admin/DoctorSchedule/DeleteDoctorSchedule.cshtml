@@ -1,0 +1,19 @@
+@model DoctorSchedule
+
+@{
+    ViewData["Title"] = "Delete Doctor Schedule";
+}
+
+<h1>Delete Doctor Schedule</h1>
+
+<h3>Are you sure you want to delete this schedule?</h3>
+<div>
+    <h4>Day of Week: @Model.DoctorDate</h4>
+    <h4>Start Time: @Model.StartTime</h4>
+    <h4>End Time: @Model.EndTime</h4>
+</div>
+<form asp-action="DeleteDoctorSchedule" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Delete</button>
+    <a asp-action="DisplayDoctorSchedules">Cancel</a>
+</form>

@@ -1,0 +1,50 @@
+@model List<DoctorSchedule>
+
+@{
+    ViewData["Title"] = "Doctor Schedules";
+}
+<h1>All Doctor Schedules</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Doctor</th>
+            <th>Specialty</th>
+            <th>Date</th>
+            <th>Day of Week</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var schedule in Model)
+        {
+            <tr>
+                <td>@schedule.Doctor.Name</td>
+                <td>@schedule.Doctor.Specialty_Doc</td>
+                <td>@schedule.DoctorDate.ToShortDateString()</td>
+                <td>@schedule.DoctorDate.ToString("ddd")</td>
+                <td>@schedule.StartTime</td>
+                <td>@schedule.EndTime</td>
+                <td>
+                    <form asp-action="EditDoctorSchedule" method="get">
+                        <input type="hidden" name="scheduleId" value="@schedule.Id" />
+                        <button type="submit" class="btn btn-warning">Edit</button>
+                    </form>
+                    <form asp-action="DeleteDoctorSchedule" asp-route-scheduleId="@schedule.Id" method="post"
+                        onsubmit="return confirm('Are you sure you want to delete this schedule?');">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                    <form asp-action="CopyScheduleForNextWeek" method="post">
+                        @* @Html.AntiForgeryToken() *@
+                        <input type="hidden" name="doctorId" value="@schedule.DoctorId" />
+                        <input type="hidden" name="scheduleId" value="@schedule.Id" />
+                        <button type="submit" class="btn btn-success">CopySchedule</button>
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

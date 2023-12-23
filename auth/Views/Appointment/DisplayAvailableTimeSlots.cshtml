@@ -1,0 +1,56 @@
+@model List<Appointment>
+@{
+    ViewData["Title"] = "Appointments";
+}
+<h2>Available Time Slots</h2>
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+    @ViewBag.ErrorMessage
+</div>
+}
+@if (Model.Any())
+{
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>DayOfweek</th>
+            @* <th>doctorScheduleId</th> *@
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var timeSlot in Model)
+            {
+                <tr>
+                    <td>@timeSlot.AppointmentDate.ToShortDateString()</td>
+                    <th>@timeSlot.AppointmentDate.ToString("ddd")</th>
+                    @* <th>@timeSlot.DoctorScheduleId</th> *@
+                    <td>@timeSlot.StartTime</td>
+                    <td>@timeSlot.EndTime</td>
+                    <td>
+                        <form asp-action="BookAppointment" asp-controller="Appointment" method="post">
+                            <input type="hidden" name="doctorId" value="@timeSlot.DoctorId" />
+                            @* <input type="hidden" name="doctorScheduleId" value="@timeSlot.DoctorScheduleId" /> *@
+                            <input type="hidden" name="appointmentDate" value="@timeSlot.AppointmentDate" />
+                            <input type="hidden" name="startTime" value="@timeSlot.StartTime" />
+                            <input type="hidden" name="endTime" value="@timeSlot.EndTime" />
+                            <button type="submit" class="btn btn-success">Book Appointment</button>
+                        </form>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No available time slots.</p>
+}
+<div>
+    <p>@ViewData["Message"]</p>
+</div>
